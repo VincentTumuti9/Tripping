@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault - Artisan Bevarage Catelog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">The Vault</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog,html" class="active">catalog</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Curated craft Bevarage</h1>
+            <p>Explore our exclusive of artisan spirits, wines, and rare selections.</p>
+        </section>
+
+        <div class="table-controls">
+            <inputs type="text" id="search-products" class="search-inputs" placeholder="Search beverages...">
+                <select id="category-filter" class="search-input">
+                    <option value="all">ALL categories</option>
+                    <option value="whiskey">whiskey & Bourbon</option>
+                    <option value="wine">Fine wine</option>
+                    <option value="craft">Craft Beer</option>
+                </select>    
+        </div>
+
+
+        <section class="grid-3" id="product-grid">
+            <div class="info-card">
+                <h3>Highland Reserve Scothch</h3>
+                <p>class="course-meta">category: Whiskey & Bourbon</p>
+                <p><strong>sh.6700</strong></p>
+                <button class="btn-primary" onclick="addTocart('Highland Reserve scotch', 85)">Add to Cart</button>
+            </div>
+
+            <div class="info-card">
+                <h3>Vintage cabernet Sauvigon</h3>
+                <p class="course-meta">category: Fine wine</p>
+                <p><strong>sh. 7500</strong></p>
+                <button class="btn-primary" onclick="addTocart('Vintage Cabernet Sauvigon', 45)">Add to cart</button>
+            </div>
+
+            <div class="info-card">
+                <h3>Artisan IPA six-pack</h3>
+                <p class="course-meta">Category: Craft Beer</p>
+                <p><strong>sh. 2700</strong></p>
+                <button class="btn-primary" onlick="addTocart('Vintage ')"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Vault. Please enjoy responsibly. 18+</p>
+    </footer>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</body>
+</html>
